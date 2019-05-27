@@ -6,11 +6,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
 public static void main(String args[]){
-    AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-    ctx.register(MainConfig.class);
-    ctx.refresh();
+    AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
+    annotationConfigApplicationContext.register(MainConfig.class);
+    annotationConfigApplicationContext.refresh();
 
-    Movie movie = (Movie) ctx.getBean("movie");
+    Movie movie = (Movie) annotationConfigApplicationContext.getBean("movie");
     System.out.println(movie);
+    Movie movie1 = (Movie) annotationConfigApplicationContext.getBean("movie");
+    System.out.println(movie1);
+    System.out.println(movie==movie1);
 }
 }
+
