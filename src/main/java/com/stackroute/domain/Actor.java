@@ -5,6 +5,7 @@ public class Actor {
     private String actorname;
     private int actorage;
     private String actorgenger;
+
     public Actor(String actorname, int actorage, String actorgenger) {
         this.actorname = actorname;
         this.actorage = actorage;
@@ -15,7 +16,8 @@ public class Actor {
     public Actor() {
         System.out.println("Actor");
     }
-        public String getActorname() {
+
+    public String getActorname() {
         return actorname;
     }
 
@@ -38,12 +40,11 @@ public class Actor {
     public void setActorgenger(String actorgenger) {
         this.actorgenger = actorgenger;
     }
+
     @Override
     public String toString() {
         return "Actor{" + "actorname='" + actorname + '\'' + ", actorage=" + actorage + ", actorgenger='" + actorgenger + '\'' + '}';
     }
-
-
 }
 
 

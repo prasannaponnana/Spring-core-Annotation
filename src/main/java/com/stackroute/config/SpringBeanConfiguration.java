@@ -12,4 +12,5 @@ public class SpringBeanConfiguration {
     Actor actor=new Actor("prasanna",23,"female");
     return new Movie(actor);
 }
+
 }
