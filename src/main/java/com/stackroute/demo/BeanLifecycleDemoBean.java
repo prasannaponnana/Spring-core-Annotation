@@ -23,7 +23,7 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("message is:"+message);
+        System.out.println("InitializingBean:"+message);
 
     }
 }
