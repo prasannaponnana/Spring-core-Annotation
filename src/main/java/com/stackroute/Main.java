@@ -12,9 +12,15 @@ public static void main(String args[]){
 
     Movie movie = (Movie) annotationConfigApplicationContext.getBean("movie");
     System.out.println(movie);
-    Movie movie1 = (Movie) annotationConfigApplicationContext.getBean("movie");
+  /* Movie movie1 = (Movie) annotationConfigApplicationContext.getBean("movie1");
     System.out.println(movie1);
     System.out.println(movie==movie1);
+*/
+
+
+    /*Movie movie2 = (Movie) annotationConfigApplicationContext.getBean("movie2");
+    System.out.println(movie2);
+    System.out.println(movie==movie2);*/
 }
 }
 
